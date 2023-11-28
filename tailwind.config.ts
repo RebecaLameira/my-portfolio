@@ -1,20 +1,35 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
-}
-export default config
+	content: [
+		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	theme: {
+		fontFamily: {
+			inter: ["Inter", "sans-serif"],
+			indie: ["Indie Flower", "cursive"],
+		},
+		fontSize: {
+			xs: "var(--font-xs)",
+			sm: "var(--font-sm)",
+			md: "var(--font-md)",
+			lg: "var(--font-lg)",
+			xl: "var(--font-xl)",
+		},
+		extend: {
+			colors: {
+				primary: "var(--primary)",
+			},
+			backgroundImage: {
+				fundo: "url('/img/Bg.svg')",
+			},
+			backgroundSize: {
+				cover: "cover",
+			},
+		},
+	},
+	plugins: [],
+};
+export default config;
