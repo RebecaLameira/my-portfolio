@@ -3,8 +3,7 @@ import Button from "../Button/Button";
 const Navbar = () => {
 	return (
 		<nav className="flex w-screen h-20 bg-white justify-between items-center px-16">
-			<p className="flex-row font-Indie text-2xl">Rebeca Lameira</p>
-
+			<span className="flex-row font-indie text-2xl">Rebeca Lameira</span>
 			<Button>
 				{
 					<Link
