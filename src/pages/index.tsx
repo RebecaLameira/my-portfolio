@@ -11,8 +11,9 @@ export default function HomePage() {
 				<title>Home - Portfolio Rebeca Lameira</title>
 			</Head>
 
-			<Navbar></Navbar>
-			<Footer></Footer>
+			<Navbar path="/Contact"> {"Contact me"}</Navbar>
+			<div>Teste</div>
+			<Footer />
 		</div>
 	);
 }
