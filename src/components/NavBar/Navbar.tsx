@@ -1,19 +1,21 @@
 import Link from "next/link";
+import Button from "../Button/Button";
 const Navbar = () => {
 	return (
-		<div className="flex w-screen h-20 bg-white  items-center px-16">
-			<h1>Rebeca Lameira</h1>
-			<div className="container justify-betweens">
-				<Link href="/"> Home</Link>
-				<Link href="/AboutMe"> About Me</Link>
-				<Link href="/Projects"> Projects</Link>
-				<Link href="/Skills"> Skills</Link>
-			</div>
-			<Link href="/Contact" className="item-end">
-				{" "}
-				Contact
-			</Link>
-		</div>
+		<nav className="flex w-screen h-20 bg-white justify-between items-center px-16">
+			<p className="flex-row font-Indie text-2xl">Rebeca Lameira</p>
+
+			<Button>
+				{
+					<Link
+						href="/Contact"
+						className="text-base font-bold item-end px-8 py-3.5"
+					>
+						Contact me
+					</Link>
+				}
+			</Button>
+		</nav>
 	);
 };
 

@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: Indie;
+	src: url("../fonts/IndieFlower-Regular.ttf");
+}
+@font-face {
+	font-family: Inter;
+	src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+	font-family: Julius;
+	src: url("../fonts/JuliusSansOne-Regular.ttf");
+}
+* {
+	font-family: Inter;
+}
 @layer base {
 	:root {
 		--primary: #1bbb5b;
+
+		--font-julius: Julius;
+		--font-indie: Indie;
 	}
 }

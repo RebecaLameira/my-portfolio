@@ -7,18 +7,11 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		fontFamily: {
-			inter: ["Inter", "sans-serif"],
-			indie: ["Indie Flower", "cursive"],
-		},
-		fontSize: {
-			xs: "var(--font-xs)",
-			sm: "var(--font-sm)",
-			md: "var(--font-md)",
-			lg: "var(--font-lg)",
-			xl: "var(--font-xl)",
-		},
 		extend: {
+			fontFamily: {
+				indie: "var(--font-indie)",
+				julius: "var(--font-julius)",
+			},
 			colors: {
 				primary: "var(--primary)",
 			},
