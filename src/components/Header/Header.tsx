@@ -4,9 +4,12 @@ import Link from "next/link";
 
 const Header = () => {
 	return (
-		<header className="flex flex-wrap m-2 p-4 items-center justify-around">
-			<div className="">
-				<h1 className="bg-white font-julius text-4xl">Front-End Developer</h1>
+		<header className="flex flex-wrap m-2 p-4 items-center justify-around sm:max-lg:flex-wrap-reverse">
+			<div className="sm:justify-center">
+				<h1 className="bg-white container w-60 h-20 font-julius font-black text-4xl my-8">
+					Front-End <br />
+					Developer
+				</h1>
 				<p className="bg-white text-base p-2">
 					Front-end focado no React, Typescript, Next
 				</p>
