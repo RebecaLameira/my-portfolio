@@ -10,8 +10,11 @@ export type NavbarProps = {
 const Navbar = ({ children, path }: NavbarProps) => {
 	return (
 		<nav className="flex w-screen h-20 bg-white shadow items-center justify-between px-16">
-			<span className="font-indie text-2xl">Rebeca Lameira</span>
-			<NavLinks />
+			<div className="flex flex-wrap gap-10 justify-between">
+				<span className="font-indie text-2xl">Rebeca Lameira</span>
+				<NavLinks />
+			</div>
+
 			<Button>
 				{
 					<Link

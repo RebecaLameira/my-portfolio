@@ -1,7 +1,7 @@
 import Link from "next/link";
 const NavLinks = () => {
 	return (
-		<div className=" flex justify-start gap-8">
+		<div className="flex gap-8">
 			<Link href="/" className="">
 				{" "}
 				Home
