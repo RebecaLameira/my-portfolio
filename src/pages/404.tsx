@@ -8,15 +8,22 @@ export default function Custom404() {
 			<Head>
 				<title>Portfolio Rebeca Lameira</title>
 			</Head>
+
 			<Navbar path="/">{"Voltar"}</Navbar>
-			<div className="flex items-end">
+
+			<div className="grid place-items-center p-4 gap-2">
+				<span className="bg-white">
+					<p className="font-bold text-6xl">Oops!</p>
+				</span>
+
 				<Image
 					src="/img/404.svg"
 					alt="Picture of the author"
-					width={800}
+					width={700}
 					height={415}
 				/>
 			</div>
+
 			<Footer />
 		</>
 	);
