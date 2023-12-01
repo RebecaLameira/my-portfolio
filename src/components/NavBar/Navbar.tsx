@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "../Button/Button";
+import NavLinks from "./NavLinks/NavLinks";
 
 export type NavbarProps = {
 	children: React.ReactNode;
@@ -8,8 +9,9 @@ export type NavbarProps = {
 
 const Navbar = ({ children, path }: NavbarProps) => {
 	return (
-		<nav className="flex w-screen h-20 bg-white shadow justify-between items-center px-16">
-			<span className="flex-row font-indie text-2xl">Rebeca Lameira</span>
+		<nav className="flex w-screen h-20 bg-white shadow items-center justify-between px-16">
+			<span className="font-indie text-2xl">Rebeca Lameira</span>
+			<NavLinks />
 			<Button>
 				{
 					<Link
