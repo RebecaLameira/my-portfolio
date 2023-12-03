@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Header = () => {
 	return (
-		<header className="flex flex-wrap m-2 p-4 items-center justify-around sm:max-lg:flex-wrap-reverse">
-			<div className="sm:justify-center">
+		<header className="flex flex-wrap m-2 p-4 items-center justify-around lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse">
+			<div className="lg:justify-center md:justify-center sm:justify-center">
 				<h1 className="bg-white container w-60 h-20 font-julius font-black text-4xl my-8">
 					Front-End <br />
 					Developer

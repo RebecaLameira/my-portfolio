@@ -14,17 +14,18 @@ const Navbar = ({ children, path }: NavbarProps) => {
 				<span className="font-indie text-2xl">Rebeca Lameira</span>
 				<NavLinks />
 			</div>
-
-			<Button>
-				{
-					<Link
-						href={path}
-						className="text-base font-bold item-end px-8 py-3.5"
-					>
-						{children}
-					</Link>
-				}
-			</Button>
+			<div>
+				<Button>
+					{
+						<Link
+							href={path}
+							className="text-base font-bold item-end px-8 py-3.5"
+						>
+							{children}
+						</Link>
+					}
+				</Button>
+			</div>
 		</nav>
 	);
 };

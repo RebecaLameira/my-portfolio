@@ -13,9 +13,7 @@ export default function HomePage() {
 
 			<Navbar path="/Contact"> {"Contact me"}</Navbar>
 
-			<main>
-				<Header />
-			</main>
+			<Header />
 
 			<Footer />
 		</>
