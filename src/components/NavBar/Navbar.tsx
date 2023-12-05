@@ -14,7 +14,7 @@ const Navbar = ({ children, path }: NavbarProps) => {
 				<span className="font-indie text-2xl">Rebeca Lameira</span>
 				<NavLinks />
 			</div>
-			<div>
+			<div className="md:hidden sm:hidden">
 				<Button>
 					{
 						<Link
