@@ -6,7 +6,7 @@ export default function Document() {
 			<Head>
 				<link rel="icon" href="/img/RL.ico" sizes="any" />
 			</Head>
-			<body className="h-screen flex bg-fundo">
+			<body className="h-screen flex bg-fundo bg-cover">
 				<Main />
 				<NextScript />
 			</body>
