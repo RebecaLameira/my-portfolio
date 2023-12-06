@@ -10,7 +10,7 @@ export default function Projects() {
 			<Head>
 				<title>Projects - Portfolio Rebeca Lameira</title>
 			</Head>
-			<Navbar path="/Contact">{"Contact me"}</Navbar>
+			<Navbar path="/Contact">{i18n.t("projectsPage.button")}</Navbar>
 			<h1>{i18n.t("projectsPage.title1")}</h1>
 			<Footer />
 		</div>

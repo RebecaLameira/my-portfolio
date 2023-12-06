@@ -10,7 +10,7 @@ export default function Skills() {
 			<Head>
 				<title>Skills - Portfolio Rebeca Lameira</title>
 			</Head>
-			<Navbar path="/Contact">{"Contact me"}</Navbar>
+			<Navbar path="/Contact">{i18n.t("skillsPage.button")}</Navbar>
 			<h1>{i18n.t("skillsPage.title1")}</h1>
 			<h1>{i18n.t("skillsPage.title2")}</h1>
 			<Footer />

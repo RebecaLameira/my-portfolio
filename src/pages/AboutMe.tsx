@@ -10,7 +10,7 @@ export default function AboutMe() {
 			<Head>
 				<title>About Me - Portfolio Rebeca Lameira</title>
 			</Head>
-			<Navbar path="/Contact">{"Contact me"}</Navbar>
+			<Navbar path="/Contact">{i18n.t("aboutmePage.button")}</Navbar>
 			<div>
 				<article className="bg-white m-16 p-8 grid gap-6 indent-8 text-xl text-justify">
 					<h1 className="text-4xl text-secondary font-semibold">
