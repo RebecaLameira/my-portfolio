@@ -1,6 +1,9 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/NavBar/Navbar";
 import Head from "next/head";
+
+import { i18n } from "@/translate/i18n";
+
 export default function AboutMe() {
 	return (
 		<div>
@@ -10,7 +13,9 @@ export default function AboutMe() {
 			<Navbar path="/Contact">{"Contact me"}</Navbar>
 			<div>
 				<article className="bg-white m-16 p-8 grid gap-6 indent-8 text-xl text-justify">
-					<h1 className="text-4xl text-secondary font-semibold">About me</h1>
+					<h1 className="text-4xl text-secondary font-semibold">
+						{i18n.t("aboutmePage.title1")}
+					</h1>
 					<p>
 						{" "}
 						I'm a Front-end developer specializing in creating elegant and
@@ -33,7 +38,9 @@ export default function AboutMe() {
 					</p>
 				</article>
 				<section className="bg-white m-16 p-8">
-					<h1 className=" text-4xl text-secondary font-semibold">Trajectory</h1>
+					<h1 className=" text-4xl text-secondary font-semibold">
+						{i18n.t("aboutmePage.title2")}
+					</h1>
 				</section>
 			</div>
 			<Footer />

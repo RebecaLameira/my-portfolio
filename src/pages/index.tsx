@@ -4,6 +4,8 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Card from "@/components/Card/Card";
 
+import { i18n } from "@/translate/i18n";
+
 export default function HomePage() {
 	return (
 		<>
@@ -11,7 +13,7 @@ export default function HomePage() {
 				<title>Home - Portfolio Rebeca Lameira</title>
 			</Head>
 
-			<Navbar path="/Contact"> {"Contact me"}</Navbar>
+			<Navbar path="/Contact"> {i18n.t("landingPage.button")}</Navbar>
 
 			<Header />
 

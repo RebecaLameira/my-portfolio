@@ -1,17 +1,18 @@
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 import Link from "next/link";
+import { i18n } from "@/translate/i18n";
 
 const Header = () => {
 	return (
 		<header className="flex flex-wrap m-2 p-4 items-center justify-around lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse">
 			<div className="lg:justify-center md:justify-center sm:justify-center">
-				<h1 className="bg-white container w-60 h-20 font-julius font-black text-4xl my-8">
-					Front-End <br />
-					Developer
+				<h1 className="bg-white container w-60 h-20 p-2 font-julius font-black text-4xl my-8">
+					{i18n.t("landingPage.title1")} <br />
+					{i18n.t("landingPage.title2")}
 				</h1>
 				<p className="bg-white text-base p-2">
-					Front-end focado no React, Typescript, Next
+					{i18n.t("landingPage.subtitle")}
 				</p>
 				<Button className="my-8">
 					{
@@ -19,7 +20,7 @@ const Header = () => {
 							href="/Contact"
 							className="text-base font-bold item-end px-8 py-3.5"
 						>
-							Contact me
+							{i18n.t("landingPage.button")}
 						</Link>
 					}
 				</Button>
