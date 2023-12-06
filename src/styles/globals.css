@@ -19,8 +19,23 @@
 }
 @layer base {
 	:root {
+		/* Colors */
 		--primary: #1bbb5b;
+		--secondary: #0e864c;
+		--tertiary: #748e63;
 
+		/* Gradient color*/
+
+		--gradient-primary: linear-gradient(
+			rgba(12, 95, 85, 1),
+			rgba(23, 191, 168, 1)
+		);
+		--gradient-secondary: linear-gradient(
+			rgba(14, 134, 76, 1) rgba(55, 101, 73, 1) rgba(38, 33, 44, 1)
+		);
+
+		/* Fonts */
+		--font-primary: Inter;
 		--font-julius: Julius;
 		--font-indie: Indie;
 	}

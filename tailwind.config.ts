@@ -21,17 +21,17 @@ const config: Config = {
 		},
 		extend: {
 			fontFamily: {
+				inter: "var(--font-primary)",
 				indie: "var(--font-indie)",
 				julius: "var(--font-julius)",
 			},
 			colors: {
 				primary: "var(--primary)",
+				secondary: "var(--secondary)",
+				tertiary: "var(--tertiary)",
 			},
 			backgroundImage: {
 				fundo: "url('/img/Bg.svg')",
-			},
-			backgroundSize: {
-				cover: "cover",
 			},
 		},
 	},
