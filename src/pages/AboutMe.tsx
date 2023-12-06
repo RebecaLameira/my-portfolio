@@ -16,26 +16,8 @@ export default function AboutMe() {
 					<h1 className="text-4xl text-secondary font-semibold">
 						{i18n.t("aboutmePage.title1")}
 					</h1>
-					<p>
-						{" "}
-						I'm a Front-end developer specializing in creating elegant and
-						highly functional interfaces. With three years of development
-						experience and a recent Computer Engineering degree, I am constantly
-						improving my programming skills. I am always looking for new
-						challenges and collaboration opportunities to expand my knowledge
-						and contribute to innovative projects.
-					</p>
-					<p>
-						My expertise includes HTML5, CSS3, JavaScript and TypeScript,
-						essential for delivering sophisticated designs and intuitive user
-						experiences. I have experience in several CSS frameworks, such as
-						Tailwind CSS, Bootstrap and Material UI, in addition to mastering
-						libraries such as React.js and the Next.js framework. On the
-						back-end, I have knowledge of Python, Node.js and ASP.NET, as well
-						as SQL, MySQL, MongoDB and Firebase Realtime Database. I'm always
-						looking for new challenges and collaboration opportunities to expand
-						my knowledge and contribute to innovative projects.
-					</p>
+					<p>{i18n.t("aboutmePage.textp1")}</p>
+					<p>{i18n.t("aboutmePage.textp2")}</p>
 				</article>
 				<section className="bg-white m-16 p-8">
 					<h1 className=" text-4xl text-secondary font-semibold">
