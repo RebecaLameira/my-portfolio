@@ -20,7 +20,7 @@ export default function Projects() {
 					</h1>
 				</div>
 				<div>
-					<Image src="/img/Logs.svg" alt="" width={2000} height={2000} />
+					<Image src="/img/Logs.svg" alt="" width={1000} height={1000} />
 				</div>
 			</div>
 
