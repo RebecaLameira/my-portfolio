@@ -17,7 +17,7 @@ export default function HomePage() {
 
 			<Header />
 
-			<Footer />
+			<Footer className="fixed" />
 		</>
 	);
 }

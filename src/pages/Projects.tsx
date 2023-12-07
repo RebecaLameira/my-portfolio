@@ -24,7 +24,7 @@ export default function Projects() {
 				</div>
 			</div>
 
-			<Footer />
+			<Footer className="fixed" />
 		</div>
 	);
 }

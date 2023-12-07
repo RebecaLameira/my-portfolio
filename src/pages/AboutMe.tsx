@@ -25,7 +25,7 @@ export default function AboutMe() {
 					</h1>
 				</section>
 			</div>
-			<Footer />
+			<Footer className="sticky" />
 		</div>
 	);
 }
