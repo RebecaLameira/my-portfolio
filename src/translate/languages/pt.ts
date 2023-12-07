@@ -38,6 +38,13 @@ const messages = {
 				title1: "Contato",
 				description:
 					"Gostou deste Portfólio? Ou você gostaria de me enviar uma declaração.",
+				label1: "Nome Completo *",
+				label2: "Email *",
+				label3: "Mensagem *",
+				placeholder1: "Escreva seu nome...",
+				placeholder2: "Escreva seu email...",
+				placeholder3: "Escreva seu mensagem...",
+
 				button1: "Voltar",
 				button2: "Enviar",
 			},

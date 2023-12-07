@@ -23,8 +23,8 @@ const Input = ({ label, className, ...rest }: InputProps) => {
 			{label && <label className="absolute pt-1 pl-3 text-xs">{label}</label>}
 			<InputOrTextArea
 				className={`
-        bg-dark text-gray-primary rounded-md p-3
-        disabled:bg-disabled disabled:border-2 disabled:border-disabled
+         w-[470px] text-gray-primary rounded-[50px] p-3 indent-4 
+        
         ${label && "pt-5"}
         ${className}
       `}
