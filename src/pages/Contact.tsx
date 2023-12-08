@@ -50,5 +50,4 @@ export default function Contact() {
 			<Footer />
 		</div>
 	);
-	/*<label>{i18n.t("contactPage.label1")}</label> */
 }

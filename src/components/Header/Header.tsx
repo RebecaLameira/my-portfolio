@@ -5,8 +5,8 @@ import { i18n } from "@/translate/i18n";
 
 const Header = () => {
 	return (
-		<header className="flex flex-wrap m-2 p-4 items-center justify-around lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse">
-			<div className="lg:justify-center md:justify-center sm:justify-center">
+		<header className="flex flex-wrap m-2 p-4 items-center justify-around mobile:flex-wrap-reverse">
+			<div className="laptop:justify-center mobile:justify-center">
 				<h1 className="bg-white container w-60 h-20 p-2 font-julius font-black text-4xl my-8">
 					{i18n.t("landingPage.title1")} <br />
 					{i18n.t("landingPage.title2")}
@@ -31,7 +31,7 @@ const Header = () => {
 					alt="Foto da Rebeca Lameira"
 					width={384}
 					height={391}
-					className="flex justify-end"
+					className="flex justify-end laptop:scale-75 mobile:scale-75"
 				/>
 			</div>
 		</header>

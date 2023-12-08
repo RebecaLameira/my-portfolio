@@ -21,6 +21,7 @@ export default function Custom404() {
 					alt="Picture of the author"
 					width={700}
 					height={415}
+					className="laptop:scale-75 mobile:scale-50"
 				/>
 			</div>
 

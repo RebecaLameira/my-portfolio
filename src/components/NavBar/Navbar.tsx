@@ -11,8 +11,8 @@ export type NavbarProps = {
 const Navbar = ({ children, path }: NavbarProps) => {
 	return (
 		<nav className="flex w-screen h-20 bg-white shadow items-center justify-between px-16">
-			<div className="flex flex-wrap gap-10 md:block md:gap-0 md:justify-center justify-between">
-				<span className="font-indie text-2xl md:text-base sm:text-base">
+			<div className="flex flex-wrap gap-10 mobile:block mobile:gap-0 mobile:justify-center justify-between">
+				<span className="font-indie text-2xl mobile:text-base">
 					Rebeca Lameira
 				</span>
 				<NavLinks />
@@ -20,7 +20,7 @@ const Navbar = ({ children, path }: NavbarProps) => {
 			<div>
 				<Toggle />
 			</div>
-			<div className="md:hidden sm:hidden">
+			<div className=" laptop:hidden mobile:hidden">
 				<Button>
 					{
 						<Link

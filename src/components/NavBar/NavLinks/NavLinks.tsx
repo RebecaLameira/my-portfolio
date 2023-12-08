@@ -3,7 +3,7 @@ import { i18n } from "@/translate/i18n";
 
 const NavLinks = () => {
 	return (
-		<div className="flex gap-8 md:text-xs sm:text-xs">
+		<div className="flex gap-8 mobile:text-xs">
 			<Link href="/">{i18n.t("navbar.navlinks.link1")}</Link>
 			<Link href="/AboutMe"> {i18n.t("navbar.navlinks.link2")}</Link>
 			<Link href="/Projects"> {i18n.t("navbar.navlinks.link3")}</Link>

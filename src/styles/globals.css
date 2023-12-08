@@ -26,10 +26,6 @@
 
 		/* Gradient color*/
 
-		--gradient-primary: linear-gradient(
-			rgba(12, 95, 85, 1),
-			rgba(23, 191, 168, 1)
-		);
 		--gradient-secondary: linear-gradient(
 			rgba(14, 134, 76, 1) rgba(55, 101, 73, 1) rgba(38, 33, 44, 1)
 		);

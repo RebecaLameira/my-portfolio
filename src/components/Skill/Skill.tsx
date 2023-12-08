@@ -7,9 +7,13 @@ export type SkillProps = {
 const Skill = ({ label, level, percent, className }: SkillProps) => {
 	return (
 		<>
-			<div className="flex justify-between mb-1 px-4">
-				<span className="text-base font-semibold text-secondary">{label}</span>
-				<span className="text-sm font-medium text-secondary">{level}</span>
+			<div className="flex justify-between mb-1 px-4 ">
+				<span className="text-base font-semibold text-secondary laptop:text-sm mobile:text-xs">
+					{label}
+				</span>
+				<span className="text-sm font-medium text-secondary laptop:text-xs mobile:text-xs">
+					{level}
+				</span>
 			</div>
 			<div className="w-full bg-gray-200 rounded-full h-2.5">
 				<div
