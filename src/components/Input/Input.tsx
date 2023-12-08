@@ -19,18 +19,18 @@ const InputOrTextArea = (props: InputProps) => {
 
 const Input = ({ label, className, ...rest }: InputProps) => {
 	return (
-		<div className="relative">
-			{label && <label className="absolute pt-1 pl-3 text-xs">{label}</label>}
-			<InputOrTextArea
-				className={`
+		<>
+			<label className="pt-1 pl-3 text-base">{label}</label>
+			<div className="relative">
+				<InputOrTextArea
+					className={`
          w-[470px] text-gray-primary rounded-[50px] p-3 indent-4 
-        
-        ${label && "pt-5"}
         ${className}
       `}
-				{...rest}
-			/>
-		</div>
+					{...rest}
+				/>
+			</div>
+		</>
 	);
 };
 

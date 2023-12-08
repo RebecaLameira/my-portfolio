@@ -22,13 +22,18 @@ export default function Contact() {
 					</div>
 					<br />
 					<div>
-						<form className="grid gap-4 text-white text-base">
-							<label>{i18n.t("contactPage.label1")}</label>
-							<Input placeholder={i18n.t("contactPage.placeholder1")} />
-							<label>{i18n.t("contactPage.label2")}</label>
-							<Input placeholder={i18n.t("contactPage.placeholder2")} />
-							<label>{i18n.t("contactPage.label3")}</label>
+						<form className="grid gap-3 text-gray-200 text-base">
 							<Input
+								label={i18n.t("contactPage.label1")}
+								placeholder={i18n.t("contactPage.placeholder1")}
+							/>
+
+							<Input
+								label={i18n.t("contactPage.label2")}
+								placeholder={i18n.t("contactPage.placeholder2")}
+							/>
+							<Input
+								label={i18n.t("contactPage.label3")}
 								className="h-32 text-start"
 								placeholder={i18n.t("contactPage.placeholder3")}
 							/>
@@ -45,4 +50,5 @@ export default function Contact() {
 			<Footer />
 		</div>
 	);
+	/*<label>{i18n.t("contactPage.label1")}</label> */
 }
