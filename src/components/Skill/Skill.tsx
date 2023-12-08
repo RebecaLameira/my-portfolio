@@ -13,7 +13,7 @@ const Skill = ({ label, level, percent, className }: SkillProps) => {
 			</div>
 			<div className="w-full bg-gray-200 rounded-full h-2.5">
 				<div
-					className={`px-4 bg-gradient-to-r from-[#40A65C] via-[#69D186] to-[#ACEDD5] h-2.5 rounded-full w-${percent}`}
+					className={`px-4 bg-gradient-to-r from-[#40A65C] via-[#69D186] to-[#ACEDD5] h-2.5 rounded-full ${percent}`}
 				></div>
 			</div>
 		</>
