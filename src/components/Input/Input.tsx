@@ -24,7 +24,7 @@ const Input = ({ label, className, ...rest }: InputProps) => {
 			<div className="relative">
 				<InputOrTextArea
 					className={`
-         w-[470px] text-gray-primary rounded-[50px] p-3 indent-4 
+         w-[470px] text-gray-primary rounded-[50px] p-3 indent-4 mobile:w-[277px]
         ${className}
       `}
 					{...rest}

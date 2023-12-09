@@ -13,12 +13,17 @@ export default function Contact() {
 			</Head>
 			<Navbar path="/"> {i18n.t("contactPage.button1")}</Navbar>
 			<section className="grid place-content-center">
-				<div className="grid box-content my-10 p-8 h-[600px] w-[800px] justify-items-center bg-gradient-to-r from-[#26212C] via-[#376549] to-[#0E864C] rounded-[50px]">
+				<div
+					className="grid box-content my-10 p-8 h-[600px] w-[800px] justify-items-center bg-gradient-to-r from-[#26212C] via-[#376549] to-[#0E864C] rounded-[50px] 
+				mobile:h-[550px] mobile:w-[303px] mobile:my-4"
+				>
 					<div className="grid text-white justify-items-center gap-4">
-						<h1 className="text-5xl font-bold ">
+						<h1 className="text-5xl font-bold mobile:text-2xl">
 							{i18n.t("contactPage.title1")}
 						</h1>
-						<p className="text-xl">{i18n.t("contactPage.description")}</p>
+						<p className="text-xl mobile:text-base">
+							{i18n.t("contactPage.description")}
+						</p>
 					</div>
 					<br />
 					<div>
@@ -41,7 +46,7 @@ export default function Contact() {
 					</div>
 					<br />
 					<div>
-						<Button className="bg-tertiary text-xl ">
+						<Button className="bg-tertiary text-xl mobile:text-sm ">
 							{i18n.t("contactPage.button2")}
 						</Button>
 					</div>

@@ -13,7 +13,7 @@ export default function AboutMe() {
 			</Head>
 			<Navbar path="/Contact">{i18n.t("aboutmePage.button")}</Navbar>
 			<div>
-				<article className="bg-white m-16 p-8 grid gap-6 indent-8 text-xl text-justify">
+				<article className="bg-white m-16 p-8 grid gap-6 indent-8 text-xl text-justify mobile:text-sm">
 					<Title>{i18n.t("aboutmePage.title1")}</Title>
 					<p>{i18n.t("aboutmePage.textp1")}</p>
 					<p>{i18n.t("aboutmePage.textp2")}</p>

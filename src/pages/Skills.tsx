@@ -15,9 +15,7 @@ export default function Skills() {
 			<Navbar path="/Contact">{i18n.t("skillsPage.button")}</Navbar>
 			<div className="bg-white m-14 p-8 indent-4">
 				<section className="grid gap-4">
-					<Title className="laptop:text-2xl mobile:text-xl">
-						{i18n.t("skillsPage.title1")}
-					</Title>
+					<Title>{i18n.t("skillsPage.title1")}</Title>
 					<Skill label="HTML" level="Advanced" percent={"w-5/6"}></Skill>
 					<Skill
 						label="CSS, Sass and Tailwind css"
@@ -43,11 +41,12 @@ export default function Skills() {
 				</section>
 				<br />
 				<section>
-					<Title className="laptop:text-2xl mobile:text-xl">
-						{i18n.t("skillsPage.title2")}
-					</Title>
+					<Title>{i18n.t("skillsPage.title2")}</Title>
 					<br />
-					<ul className=" grid grid-cols-3 list-disc px-16 text-xl text-secondary gap-4 mobile:grid-cols-1 mobile:text-base">
+					<ul
+						className=" grid grid-cols-3 list-disc px-16 text-xl 
+					text-secondary gap-4 mobile:grid-cols-1 mobile:text-base"
+					>
 						<li>Srum</li>
 						<li>Git</li>
 						<li>Npm and Yarn</li>

@@ -35,7 +35,7 @@ const messages = {
 				button: "Contato",
 			},
 			contactPage: {
-				title1: "Contato",
+				title1: "Contate-me",
 				description:
 					"Gostou deste Portfólio? Ou você gostaria de me enviar uma declaração.",
 				label1: "Nome Completo *",
