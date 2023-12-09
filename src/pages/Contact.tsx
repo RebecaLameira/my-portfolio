@@ -27,7 +27,7 @@ export default function Contact() {
 					</div>
 					<br />
 					<div>
-						<form className="grid gap-3 text-gray-200 text-base">
+						<form className="grid gap-3 text-base">
 							<Input
 								label={i18n.t("contactPage.label1")}
 								placeholder={i18n.t("contactPage.placeholder1")}
