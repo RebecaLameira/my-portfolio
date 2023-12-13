@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { i18n } from "@/translate/i18n";
 
 const NavLinks = () => {
 	return (
 		<div className="flex gap-8 laptop:shrink mobile:text-lg">
-			<Link href="/">{i18n.t("navbar.navlinks.link1")}</Link>
-			<Link href="/AboutMe"> {i18n.t("navbar.navlinks.link2")}</Link>
-			<Link href="/Projects"> {i18n.t("navbar.navlinks.link3")}</Link>
-			<Link href="/Skills"> {i18n.t("navbar.navlinks.link4")}</Link>
+			<Link href="/">Início</Link>
+			<Link href="/AboutMe"> Sobre Mim</Link>
+			<Link href="/Projects">Projetos </Link>
+			<Link href="/Skills"> Habilidades</Link>
 		</div>
 	);
 };

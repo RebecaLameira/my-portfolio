@@ -43,7 +43,7 @@ const messages = {
 				label3: "Mensagem *",
 				placeholder1: "Escreva seu nome...",
 				placeholder2: "Escreva seu email...",
-				placeholder3: "Escreva seu mensagem...",
+				placeholder3: "Escreva sua mensagem...",
 
 				button1: "Voltar",
 				button2: "Enviar",

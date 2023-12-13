@@ -12,10 +12,10 @@ export default function Skills() {
 			<Head>
 				<title>Skills - Portfolio Rebeca Lameira</title>
 			</Head>
-			<Navbar path="/Contact">{i18n.t("skillsPage.button")}</Navbar>
+			<Navbar path="/Contact">Contato</Navbar>
 			<div className="bg-white m-14 p-8 indent-4">
 				<section className="grid gap-4">
-					<Title>{i18n.t("skillsPage.title1")}</Title>
+					<Title>Habilidades e Tecnologias</Title>
 					<Skill label="HTML" level="Advanced" percent={"w-5/6"}></Skill>
 					<Skill
 						label="CSS, Sass and Tailwind css"
@@ -41,7 +41,7 @@ export default function Skills() {
 				</section>
 				<br />
 				<section>
-					<Title>{i18n.t("skillsPage.title2")}</Title>
+					<Title>Habilidades Adicionais</Title>
 					<br />
 					<ul
 						className=" grid grid-cols-3 list-disc px-16 text-xl 

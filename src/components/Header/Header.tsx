@@ -8,11 +8,11 @@ const Header = () => {
 		<header className="flex flex-wrap m-2 p-4 items-center justify-around mobile:flex-wrap-reverse">
 			<div className="laptop:justify-center mobile:justify-center">
 				<h1 className="bg-white container w-60 h-20 p-2 font-julius font-black text-4xl my-8">
-					{i18n.t("landingPage.title1")} <br />
-					{i18n.t("landingPage.title2")}
+					DESENVOLVEDORA <br />
+					FRONT-END
 				</h1>
 				<p className="bg-white text-base p-2">
-					{i18n.t("landingPage.subtitle")}
+					Front-end focado no React, Typescript, Next.js
 				</p>
 				<Button className="my-8">
 					{
