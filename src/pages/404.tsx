@@ -2,6 +2,7 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/NavBar/Navbar";
 import Head from "next/head";
 import Image from "next/image";
+
 export default function Custom404() {
 	return (
 		<>

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Button from "../Button/Button";
 import NavLinks from "./NavLinks/NavLinks";
-import Toggle from "../Toggle/Toggle";
 
 export type NavbarProps = {
 	children: React.ReactNode;

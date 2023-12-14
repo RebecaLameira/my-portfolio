@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 import Link from "next/link";
-import { i18n } from "@/translate/i18n";
 
 const Header = () => {
 	return (
@@ -20,7 +19,7 @@ const Header = () => {
 							href="/Contact"
 							className="text-base font-bold item-end px-8 py-3.5"
 						>
-							{i18n.t("landingPage.button")}
+							Contato
 						</Link>
 					}
 				</Button>

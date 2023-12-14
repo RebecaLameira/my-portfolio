@@ -3,7 +3,6 @@ import Navbar from "@/components/NavBar/Navbar";
 import Title from "@/components/Title/Title";
 import Head from "next/head";
 
-import { i18n } from "@/translate/i18n";
 import Skill from "@/components/Skill/Skill";
 
 export default function Skills() {
