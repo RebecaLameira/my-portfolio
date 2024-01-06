@@ -13,23 +13,28 @@ const Footer = ({ children, className }: FooterProps) => {
 			<div>
 				<ul className="flex justify-between mt-3 text-sm gap-20 ">
 					<li>
-						<Link href="/Contact" className=" me-4 mobile:me-6 ">
-							<img className="scale-75" src="/img/github.svg" />
-						</Link>
-					</li>
-					<li>
-						<Link href="/Contact" className=" me-4 mobile:me-6">
+						<Link
+							href="https://linkedin.com/in/rebeca-lameira-de-rezende-4440421b8"
+							className=" me-4 mobile:me-6"
+						>
 							{<img className="scale-75" src="/img/Linkedin.svg"></img>}
 						</Link>
 					</li>
 					<li>
-						<Link href="/Contact" className=" me-4 mobile:me-6">
-							{<img className="scale-75" src="/img/Figma.svg"></img>}
+						<Link
+							href="https://github.com/RebecaLameira"
+							className=" me-4 mobile:me-6 "
+						>
+							<img className="scale-75" src="/img/github.svg" />
 						</Link>
 					</li>
+
 					<li>
-						<Link href="/Contact" className=" me-4 mobile:me-6">
-							{<img className="scale-75" src="/img/Discord.svg"></img>}
+						<Link
+							href="https://www.figma.com/@rebeca36"
+							className=" me-4 mobile:me-6"
+						>
+							{<img className="scale-75" src="/img/Figma.svg"></img>}
 						</Link>
 					</li>
 				</ul>
