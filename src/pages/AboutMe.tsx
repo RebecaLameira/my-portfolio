@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/NavBar/Navbar";
 import Title from "@/components/Title/Title";
+import Trajectory from "@/components/Trajectory/Trajectory";
 import Head from "next/head";
 
 export default function AboutMe() {
@@ -36,9 +37,10 @@ export default function AboutMe() {
 				</article>
 				<section className="bg-white m-16 p-8">
 					<Title>Trajetoria</Title>
+					<Trajectory />
 				</section>
 			</div>
-			<Footer className="sticky" />
+			<Footer />
 		</div>
 	);
 }
