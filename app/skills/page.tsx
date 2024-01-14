@@ -13,7 +13,7 @@ export default function Skills() {
 	return (
 		<div>
 			<Navbar path="/contact">Contato</Navbar>
-			<div className="bg-white m-14 p-8 indent-4">
+			<div className="bg-white m-14 p-8 indent-4 mobile:m-8">
 				<section className="grid gap-4">
 					<Title>Habilidades e Tecnologias</Title>
 					<Skill label="HTML" level="Advanced" percent={"w-5/6"}></Skill>
