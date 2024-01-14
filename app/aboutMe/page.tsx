@@ -19,7 +19,7 @@ export default function AboutMe() {
 				<Content />
 				<Trajectory />
 			</div>
-			<Footer className="absolute mobile:fixed" />
+			<Footer className="mobile:fixed" />
 		</div>
 	);
 }
