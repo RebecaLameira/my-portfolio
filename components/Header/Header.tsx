@@ -14,13 +14,13 @@ const Header = () => {
 		<header className="flex flex-wrap m-2 p-4 items-center justify-around mobile:flex-wrap-reverse">
 			<div className="laptop:justify-center mobile:justify-center">
 				<h1
-					className={`${juliusFont.className} bg-white container w-60 h-20 p-2 font-black text-4xl my-8`}
+					className={`${juliusFont.className} bg-white container w-90 h-20 p-2 font-black text-4xl my-8`}
 				>
 					DESENVOLVEDORA <br />
 					FRONT-END
 				</h1>
 				<p className="bg-white text-base p-2">
-					Front-end focado no React, Typescript, Next.js
+					Front-end focado no React.js, Typescript, Next.js
 				</p>
 				<Button className="my-8">
 					{
