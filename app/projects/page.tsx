@@ -1,7 +1,7 @@
-import Card from "../../components/Card/Card";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Image from "next/image";
+import FloatingButton from "../../components/Floating Button/FloatingButton";
 import { Metadata } from "next";
 import { Julius_Sans_One } from "next/font/google";
 
@@ -17,6 +17,7 @@ export default function Projects() {
 	return (
 		<div>
 			<Navbar path="/contact">Contato</Navbar>
+			<FloatingButton />
 
 			<div className="grid grid-cols-2 box-content my-10 p-8 h-[250px] bg-gradient-to-r from-[#17BFA8] to-[#0C5F55] items-center laptop:h-[150px] mobile:h-[100px] mobile:p-4">
 				<div>

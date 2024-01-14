@@ -1,3 +1,4 @@
+import FloatingButton from "../../components/Floating Button/FloatingButton";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Title from "../../components/Title/Title";
@@ -13,6 +14,7 @@ export default function Skills() {
 	return (
 		<div>
 			<Navbar path="/contact">Contato</Navbar>
+			<FloatingButton />
 			<div className="bg-white m-14 p-8 indent-4 mobile:m-8">
 				<section className="grid gap-4">
 					<Title>Habilidades e Tecnologias</Title>
