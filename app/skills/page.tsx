@@ -45,7 +45,7 @@ export default function Skills() {
 					<br />
 					<ul
 						className=" grid grid-cols-3 list-disc px-16 text-xl 
-					text-secondary gap-4 mobile:grid-cols-1 mobile:text-base"
+					text-secondary gap-4 mobile:grid-cols-1 mobile:text-base mobile:px-7"
 					>
 						<li>Srum</li>
 						<li>Git</li>
