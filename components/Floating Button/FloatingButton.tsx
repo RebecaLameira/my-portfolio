@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const FloatingButton = () => {
 	return (
-		<div className="fixed bottom-24 end-16 desktop:hidden">
+		<div className="fixed bottom-24 end-6 desktop:hidden">
 			<Button>
 				{
 					<Link href="/contact">
