@@ -12,7 +12,7 @@ export type FooterProps = {
 const Footer = ({ children, className }: FooterProps) => {
 	return (
 		<footer
-			className={`flex w-full py-2 px-16 bg-white border-t-2 inset-x-0 bottom-0 mobile:relative items-center justify-between mobile:justify-center ${className}`}
+			className={`flex w-full py-2 px-16 bg-white border-t-2 inset-x-0 bottom-0 items-center justify-between mobile:justify-center ${className}`}
 		>
 			<span className={`${indieFont.className} text-2xl mobile:hidden`}>
 				Rebeca Lameira

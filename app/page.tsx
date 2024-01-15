@@ -14,7 +14,7 @@ export default function Home() {
 
 			<Header />
 
-			<Footer className="fixed" />
+			<Footer className="fixed mobile:relative" />
 		</div>
 	);
 }
