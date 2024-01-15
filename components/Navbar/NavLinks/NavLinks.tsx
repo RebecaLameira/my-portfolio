@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NavLinks = () => {
 	return (
-		<div className="flex gap-8 laptop:shrink mobile:text-sm mobile:gap-4 ">
+		<div className="flex gap-8 laptop:shrink mobile:text-base mobile:gap-3 ">
 			<Link
 				href="/"
 				className="no-underline decoration-emerald-500 decoration-2 hover:underline underline-offset-4"
