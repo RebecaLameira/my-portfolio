@@ -16,7 +16,7 @@ export type NavbarProps = {
 
 const Navbar = ({ children, path }: NavbarProps) => {
 	return (
-		<nav className="flex w-screen h-20 bg-white shadow items-center justify-between px-16 mobile:justify-center">
+		<nav className="flex w-screen h-20 bg-white shadow items-center justify-between px-16 mobile:justify-center mobile:px-8">
 			<div className="flex flex-wrap gap-8 justify-between">
 				<span
 					className={`${indieFont.className} text-2xl laptop:text-base mobile:hidden`}

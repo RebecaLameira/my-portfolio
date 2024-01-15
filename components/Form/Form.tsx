@@ -20,7 +20,7 @@ const Form: FC = () => {
 	return (
 		<form
 			onSubmit={handleSubmit(onSubmit)}
-			className="w-full max-w-md mx-auto grid gap-4"
+			className="w-full max-w-md mx-auto grid gap-4 mobile:justify-center"
 		>
 			<label htmlFor="name" className="pt-1 pl-3 text-white text-base">
 				Nome Completo *

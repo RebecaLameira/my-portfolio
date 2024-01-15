@@ -20,7 +20,7 @@ export default function Contact() {
 				>
 					<div className="grid text-white justify-items-center gap-4">
 						<h1 className="text-5xl font-bold mobile:text-2xl">Contate-me</h1>
-						<p className="text-xl mobile:text-base">
+						<p className="text-xl mobile:text-base justify-center mobile:text-center">
 							Gostou deste Portfólio? Ou você gostaria de me enviar uma
 							declaração.
 						</p>
