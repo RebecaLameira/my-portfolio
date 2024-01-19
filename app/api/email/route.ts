@@ -21,21 +21,19 @@ export async function POST(request: NextRequest) {
 		to: email,
 		cc: process.env.MY_EMAIL,
 		subject: `Mensagem Automática do Portfolio Rebeca Lameira`,
-		text: `
-		Olá ${name},
+		text: `Olá ${name},
+Agradeço por entrar em contato e expressar seu interesse em meu trabalho.
 
-		Agradeço por entrar em contato e expressar seu interesse em meu trabalho.
+Recebi seu mensagem "${message}" com o seu email "${email}"
 		
-		Recebi seu mensagem "${message}" com o seu email "${email}"
-		
-		Em breve eu mesma entrarei em contato com você.
+Em breve eu mesma entrarei em contato com você.
 		
 
 
-		Atenciosamente,
-		Rebeca Lameira
-		Desenvolvedora Front-End
-		beca.rezendel@gmail.com`,
+Atenciosamente,
+Rebeca Lameira
+Desenvolvedora Front-End
+beca.rezendel@gmail.com`,
 	};
 
 	const sendMailPromise = () =>
@@ -51,7 +49,7 @@ export async function POST(request: NextRequest) {
 
 	try {
 		await sendMailPromise();
-		return NextResponse.json({ message: "Email enviado com Sucesso!!" });
+		return NextResponse.json({ message: "Email enviado com Sucesso!!" }); //Snackbar(info="Sucesso", message="Email enviado com Sucesso!!")
 	} catch (err) {
 		return NextResponse.json({ error: err }, { status: 500 });
 	}

@@ -1,8 +1,8 @@
 "use client";
 
-import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "../../utils/send-email";
+import { isEmail } from "validator";
 
 export type FormData = {
 	name: string;
@@ -10,11 +10,19 @@ export type FormData = {
 	message: string;
 };
 
-const Form: FC = () => {
-	const { register, handleSubmit } = useForm<FormData>();
+const Form = () => {
+	const {
+		register,
+		resetField,
+		handleSubmit,
+		formState: { errors },
+	} = useForm<FormData>();
 
 	function onSubmit(data: FormData) {
 		sendEmail(data);
+		resetField("name");
+		resetField("email");
+		resetField("message");
 	}
 
 	return (
@@ -31,7 +39,11 @@ const Form: FC = () => {
 				className=" w-[470px] rounded-[50px] p-3 indent-4 mobile:w-[277px] outline-0 focus:ring-4 focus:ring-green-300"
 				{...register("name", { required: true })}
 			/>
-
+			{errors?.name?.type === "required" && (
+				<p className="text-red-500 text-base indent-4 font-black">
+					Campo obrigatório.
+				</p>
+			)}
 			<label htmlFor="email" className="pt-1 pl-3 text-white text-base">
 				Email *
 			</label>
@@ -39,8 +51,22 @@ const Form: FC = () => {
 				type="email"
 				placeholder="example@domain.com"
 				className="w-[470px] rounded-[50px] p-3 indent-4 mobile:w-[277px] outline-0 focus:ring-4 focus:ring-green-300"
-				{...register("email", { required: true })}
+				{...register("email", {
+					required: true,
+					validate: (value) => isEmail(value),
+				})}
 			/>
+			{errors?.email?.type === "required" && (
+				<p className="text-red-500 text-sm indent-4 font-black">
+					Campo obrigatório.
+				</p>
+			)}
+
+			{errors?.email?.type === "validate" && (
+				<p className="error-message text-red-500 text-sm indent-4 font-black">
+					Email Inválido.
+				</p>
+			)}
 
 			<label htmlFor="message" className="pt-1 pl-3 text-white text-base">
 				Mensagem *
