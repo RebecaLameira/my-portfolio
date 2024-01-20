@@ -12,7 +12,7 @@ export type FooterProps = {
 const Footer = ({ children, className }: FooterProps) => {
 	return (
 		<footer
-			className={`flex w-full py-2 px-16 bg-white border-t-2 inset-x-0 bottom-0 items-center justify-between mobile:justify-center ${className}`}
+			className={`flex w-full py-2 px-16 bg-white border-t-2 inset-x-0 bottom-0 items-center justify-between mobile:justify-center dark:bg-black dark:border-none  dark:shadow-2xl ${className}`}
 		>
 			<span className={`${indieFont.className} text-2xl mobile:hidden`}>
 				Rebeca Lameira
@@ -32,7 +32,7 @@ const Footer = ({ children, className }: FooterProps) => {
 							href="https://github.com/RebecaLameira"
 							className=" me-4 mobile:me-6 "
 						>
-							<img className="scale-75" src="/img/github.svg" />
+							<img className="scale-75 dark:bg-white " src="/img/github.svg" />
 						</Link>
 					</li>
 
@@ -41,7 +41,12 @@ const Footer = ({ children, className }: FooterProps) => {
 							href="https://www.figma.com/@rebeca36"
 							className=" me-4 mobile:me-6"
 						>
-							{<img className="scale-75" src="/img/Figma.svg"></img>}
+							{
+								<img
+									className="scale-75 dark:bg-white"
+									src="/img/Figma.svg"
+								></img>
+							}
 						</Link>
 					</li>
 				</ul>
