@@ -8,7 +8,7 @@ const FloatingButton = () => {
 			<Button>
 				{
 					<Link href="/contact">
-						<IoPerson size={20} />
+						<IoPerson size={20} className="dark:text-black" />
 					</Link>
 				}
 			</Button>

@@ -1,7 +1,7 @@
 import Title from "../Title/Title";
 const Content = () => {
 	return (
-		<article className="bg-white m-16 p-8 grid gap-6 indent-8 text-xl text-justify mobile:text-sm mobile:m-8">
+		<article className="bg-white m-16 p-8 grid gap-6 indent-8 text-xl text-justify mobile:text-sm mobile:m-8 dark:bg-black">
 			<Title>Sobre Mim</Title>
 			<p>
 				Sou desenvolvedor Front-end especializado em criar interfaces elegantes

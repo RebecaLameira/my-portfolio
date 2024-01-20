@@ -15,7 +15,7 @@ export default function Skills() {
 		<div>
 			<Navbar path="/contact">Contato</Navbar>
 			<FloatingButton />
-			<div className="bg-white m-14 p-8 indent-4 mobile:m-8">
+			<div className="bg-white m-14 p-8 indent-4 mobile:m-8 dark:bg-black">
 				<section className="grid gap-4">
 					<Title>Habilidades e Tecnologias</Title>
 					<Skill label="HTML" level="Advanced" percent={"w-5/6"}></Skill>

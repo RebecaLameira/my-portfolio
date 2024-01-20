@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,11 @@ export default function RootLayout({
 			<head>
 				<link rel="icon" href="/img/RL.ico" sizes="any" />
 			</head>
-			<body className="h-screen flex bg-fundo bg-cover">{children}</body>
+			<body className="h-screen flex bg-fundo bg-repeat bg-opacity-20 dark:bg-darkfundo">
+				<Providers>
+					<main>{children}</main>
+				</Providers>
+			</body>
 		</html>
 	);
 }

@@ -27,9 +27,11 @@ const config: Config = {
 			},
 			backgroundImage: {
 				fundo: "url('/img/Bg.svg')",
+				darkfundo: "url('/img/Bg-dark.svg')",
 			},
 		},
 	},
 	plugins: [],
+	darkMode: "class",
 };
 export default config;
