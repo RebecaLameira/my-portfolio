@@ -1,5 +1,3 @@
-import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navbar/Navbar";
 import Form from "../../components/Form/Form";
 
 import { Metadata } from "next";
@@ -10,7 +8,6 @@ export const metadata: Metadata = {
 export default function Contact() {
 	return (
 		<div>
-			<Navbar path="/"> Voltar</Navbar>
 			<section className="grid place-content-center">
 				<div
 					className="grid box-content my-10 p-8 h-[600px] w-[800px] justify-items-center bg-gradient-to-r from-[#26212C] via-[#376549] to-[#0E864C] rounded-[50px] 

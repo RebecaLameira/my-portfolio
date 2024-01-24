@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar/Navbar";
 import Image from "next/image";
 import FloatingButton from "../../components/Floating Button/FloatingButton";
 import { Metadata } from "next";
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
 export default function Projects() {
 	return (
 		<div>
-			<Navbar path="/contact">Contato</Navbar>
 			<FloatingButton />
 
 			<div className="grid grid-cols-2 content-center box-content my-4 p-8 h-[150px] bg-gradient-to-r from-[#17BFA8] to-[#0C5F55] items-center laptop:h-[150px] mobile:h-[100px] mobile:p-4">

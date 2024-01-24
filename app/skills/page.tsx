@@ -1,5 +1,4 @@
 import FloatingButton from "../../components/Floating Button/FloatingButton";
-import Navbar from "../../components/Navbar/Navbar";
 import Title from "../../components/Title/Title";
 import Skill from "./Skill/Skill";
 
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
 export default function Skills() {
 	return (
 		<div>
-			<Navbar path="/contact">Contato</Navbar>
 			<FloatingButton />
 			<div className="bg-white m-14 p-8 indent-4 mobile:m-8 dark:bg-black">
 				<section className="grid gap-4">

@@ -10,12 +10,7 @@ const indieFont = Indie_Flower({
 	variable: "--font-indie",
 });
 
-export type NavbarProps = {
-	children: React.ReactNode;
-	path: string;
-};
-
-const Navbar = ({ children, path }: NavbarProps) => {
+const Navbar = () => {
 	return (
 		<nav className="flex w-screen h-20 bg-white shadow-lg items-center justify-between px-16 mobile:justify-center mobile:px-8 dark:bg-black">
 			<div className="flex flex-wrap gap-8 justify-between">
@@ -32,10 +27,10 @@ const Navbar = ({ children, path }: NavbarProps) => {
 					<Button>
 						{
 							<Link
-								href={path}
+								href="/contact/"
 								className="text-base font-bold item-end px-8 py-3.5 "
 							>
-								{children}
+								Contato
 							</Link>
 						}
 					</Button>

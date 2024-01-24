@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import Dropdowns from "../components/Dropdowns/Dropdowns";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
 			<body className="h-screen flex bg-fundo bg-repeat bg-opacity-20 dark:bg-darkfundo">
 				<Providers>
 					<main>
+						<Navbar />
 						<Dropdowns />
 						{children}
 						<Footer />

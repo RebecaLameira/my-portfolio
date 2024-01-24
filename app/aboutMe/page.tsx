@@ -1,5 +1,4 @@
 import Content from "../../components/Content/Content";
-import Navbar from "../../components/Navbar/Navbar";
 import Trajectory from "../../components/Trajectory/Trajectory";
 
 import { Metadata } from "next";
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
 export default function AboutMe() {
 	return (
 		<div>
-			<Navbar path="/contact">Contato</Navbar>
 			<FloatingButton />
 			<div>
 				<Content />
