@@ -1,4 +1,8 @@
+"use client";
+
+import clsx from "clsx";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const links = [
 	{ title: "Início", path: "/" },
@@ -8,6 +12,7 @@ const links = [
 ];
 
 const NavLinks = () => {
+	const pathname = usePathname();
 	return (
 		<div className="flex gap-8 laptop:shrink mobile:text-base mobile:gap-4 ">
 			{links.map((link) => {
@@ -15,7 +20,13 @@ const NavLinks = () => {
 					<Link
 						key={link.title}
 						href={link.path}
-						className="no-underline decoration-emerald-500 decoration-2 hover:underline underline-offset-4"
+						className={clsx(
+							" decoration-emerald-500 decoration-2 hover:underline hover:text-emerald-500 underline-offset-4",
+							{
+								"underline underline-offset-4 decoration-emerald-700 ":
+									pathname === link.path,
+							}
+						)}
 					>
 						{link.title}
 					</Link>
