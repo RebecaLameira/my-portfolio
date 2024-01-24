@@ -1,8 +1,6 @@
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-import Input from "../../components/Input/Input";
 import Form from "../../components/Form/Form";
-import Button from "../../components/Button/Button";
 
 import { Metadata } from "next";
 
