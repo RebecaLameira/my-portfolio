@@ -28,7 +28,6 @@ export default function Contact() {
 					<Form />
 				</div>
 			</section>
-			<Footer />
 		</div>
 	);
 }

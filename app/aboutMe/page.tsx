@@ -1,5 +1,4 @@
 import Content from "../../components/Content/Content";
-import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Trajectory from "../../components/Trajectory/Trajectory";
 
@@ -19,7 +18,6 @@ export default function AboutMe() {
 				<Content />
 				<Trajectory />
 			</div>
-			<Footer className="mobile:relative" />
 		</div>
 	);
 }

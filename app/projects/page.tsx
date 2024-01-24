@@ -1,5 +1,4 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import Image from "next/image";
 import FloatingButton from "../../components/Floating Button/FloatingButton";
 import { Metadata } from "next";
@@ -39,7 +38,6 @@ export default function Projects() {
 				</div>
 			</div>
 			<Temporary />
-			<Footer className=" mobile:fixed" />
 		</div>
 	);
 }

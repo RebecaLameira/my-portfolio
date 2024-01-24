@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import Dropdowns from "../components/Dropdowns/Dropdowns";
+import Footer from "../components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
 					<main>
 						<Dropdowns />
 						{children}
+						<Footer />
 					</main>
 				</Providers>
 			</body>

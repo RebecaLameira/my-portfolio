@@ -1,5 +1,4 @@
 import FloatingButton from "../../components/Floating Button/FloatingButton";
-import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Title from "../../components/Title/Title";
 import Skill from "./Skill/Skill";
@@ -57,7 +56,6 @@ export default function Skills() {
 					</ul>
 				</section>
 			</div>
-			<Footer />
 		</div>
 	);
 }
