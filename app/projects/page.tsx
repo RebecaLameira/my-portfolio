@@ -39,7 +39,7 @@ export default function Projects() {
 				</div>
 			</div>
 			<Temporary />
-			<Footer className="fixed mobile:fixed" />
+			<Footer className=" mobile:fixed" />
 		</div>
 	);
 }

@@ -12,7 +12,7 @@ export default function NotFound() {
 			<Navbar path="/">{"Voltar"}</Navbar>
 
 			<div className="grid place-items-center p-4 gap-2">
-				<span className="bg-white">
+				<span className="bg-white dark:bg-black">
 					<p className="font-bold text-6xl">Oops!</p>
 				</span>
 
@@ -21,7 +21,7 @@ export default function NotFound() {
 					alt="Picture of the author"
 					width={700}
 					height={415}
-					className="laptop:scale-75 mobile:scale-50"
+					className="bg-white laptop:scale-75 mobile:scale-50 dark:bg-black"
 				/>
 			</div>
 

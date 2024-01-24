@@ -1,9 +1,9 @@
 "use client";
-
-import { FiSun } from "react-icons/fi";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { FaRegMoon } from "react-icons/fa6";
+
+import dynamic from "next/dynamic";
 
 const ThemeToggle = () => {
 	const [mounted, setMounted] = useState(false);
@@ -13,22 +13,20 @@ const ThemeToggle = () => {
 
 	if (resolvedTheme === "dark") {
 		return (
-			<FiSun
+			<SunIcon
 				onClick={() => setTheme("light")}
-				size={30}
-				className="text-gray-200 mr-3"
+				className="h-7 w-7 text-gray-200"
 			/>
 		);
 	}
 	if (resolvedTheme === "light") {
 		return (
-			<FaRegMoon
+			<MoonIcon
 				onClick={() => setTheme("dark")}
-				size={30}
-				className="text-gray-400 mr-3"
+				className="h-6 w-6 text-gray-400"
 			/>
 		);
 	}
 };
 
-export default ThemeToggle;
+export default dynamic(() => Promise.resolve(ThemeToggle), { ssr: false });

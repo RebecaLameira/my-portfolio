@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 import Link from "next/link";
-import { IoPerson } from "react-icons/io5";
+import { UserIcon } from "@heroicons/react/24/solid";
 
 const FloatingButton = () => {
 	return (
@@ -8,7 +8,7 @@ const FloatingButton = () => {
 			<Button>
 				{
 					<Link href="/contact">
-						<IoPerson size={20} className="dark:text-black" />
+						<UserIcon className="h-6 w-6 text-white dark:text-black" />
 					</Link>
 				}
 			</Button>

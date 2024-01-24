@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Button from "../Button/Button";
 import NavLinks from "./NavLinks/NavLinks";
-import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 import { Indie_Flower } from "next/font/google";
 
@@ -28,7 +27,7 @@ const Navbar = ({ children, path }: NavbarProps) => {
 				<NavLinks />
 			</div>
 
-			<div className="flex laptop:hidden mobile:hidden divide-x divide-solide divide-slate-300 gap-4 items-center">
+			<div className="flex laptop:hidden mobile:hidden  gap-4 items-center">
 				<div>
 					<Button>
 						{
@@ -40,9 +39,6 @@ const Navbar = ({ children, path }: NavbarProps) => {
 							</Link>
 						}
 					</Button>
-				</div>
-				<div className="px-6 ">
-					<ThemeToggle />
 				</div>
 			</div>
 		</nav>

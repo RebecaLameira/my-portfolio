@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Temporary = () => {
 	return (
-		<div className="w-full bg-white ">
+		<div className="w-full bg-white dark:bg-black ">
 			<Image
 				src="/img/Stripes.svg"
 				alt=""
@@ -11,7 +11,7 @@ const Temporary = () => {
 				className="w-full"
 			/>
 			<div className="w-full h-28 grid justify-items-center items-center mobile:h-60">
-				<h1 className="my-4  text-6xl text-black justify-items-center mobile:text-2xl">
+				<h1 className="my-4  text-6xl text-black justify-items-center mobile:text-2xl dark:text-white">
 					Página Em Construção
 				</h1>
 			</div>
