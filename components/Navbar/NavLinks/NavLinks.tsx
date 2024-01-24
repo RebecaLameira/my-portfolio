@@ -1,32 +1,26 @@
 import Link from "next/link";
 
+const links = [
+	{ title: "Início", path: "/" },
+	{ title: "Sobre Mim", path: "/aboutMe" },
+	{ title: "Projetos", path: "/projects" },
+	{ title: "Habilidades", path: "/skills" },
+];
+
 const NavLinks = () => {
 	return (
 		<div className="flex gap-8 laptop:shrink mobile:text-base mobile:gap-4 ">
-			<Link
-				href="/"
-				className="no-underline decoration-emerald-500 decoration-2 hover:underline underline-offset-4"
-			>
-				Início
-			</Link>
-			<Link
-				href="/aboutMe"
-				className="no-underline decoration-emerald-500 decoration-2 hover:underline underline-offset-4"
-			>
-				Sobre Mim
-			</Link>
-			<Link
-				href="/projects"
-				className="no-underline decoration-emerald-500 decoration-2 hover:underline underline-offset-4"
-			>
-				Projetos
-			</Link>
-			<Link
-				href="/skills"
-				className="no-underline decoration-emerald-500 decoration-2 hover:underline underline-offset-4"
-			>
-				Habilidades
-			</Link>
+			{links.map((link) => {
+				return (
+					<Link
+						key={link.title}
+						href={link.path}
+						className="no-underline decoration-emerald-500 decoration-2 hover:underline underline-offset-4"
+					>
+						{link.title}
+					</Link>
+				);
+			})}
 		</div>
 	);
 };
