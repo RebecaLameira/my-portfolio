@@ -1,7 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Button from "../Button/Button";
 import NavLinks from "./NavLinks/NavLinks";
-
+import { usePathname } from "next/navigation";
 import { Indie_Flower } from "next/font/google";
 
 const indieFont = Indie_Flower({
@@ -11,6 +13,12 @@ const indieFont = Indie_Flower({
 });
 
 const Navbar = () => {
+	const pathname = usePathname();
+	const condicao = pathname != "/contact";
+
+	let valueButton = condicao ? "Contato" : "Voltar";
+	let href = condicao ? "/contact" : "/";
+
 	return (
 		<nav className="flex w-screen h-20 bg-white shadow-lg items-center justify-between px-16 mobile:justify-center mobile:px-8 dark:bg-black">
 			<div className="flex flex-wrap gap-8 justify-between">
@@ -27,10 +35,10 @@ const Navbar = () => {
 					<Button>
 						{
 							<Link
-								href="/contact/"
+								href={href}
 								className="text-base font-bold item-end px-8 py-3.5 "
 							>
-								Contato
+								{valueButton}
 							</Link>
 						}
 					</Button>
