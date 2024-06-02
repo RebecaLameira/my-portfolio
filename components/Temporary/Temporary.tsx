@@ -1,30 +1,14 @@
-import Image from "next/image";
-
 const Temporary = () => {
-	return (
-		<div className="w-full bg-white dark:bg-black ">
-			<Image
-				src="/img/Stripes.svg"
-				alt=""
-				width={1000}
-				height={1000}
-				className="w-full"
-			/>
-			<div className="w-full h-28 grid justify-items-center items-center mobile:h-60">
-				<h1 className="my-4  text-6xl text-black justify-items-center mobile:text-2xl dark:text-white">
-					Página Em Construção
-				</h1>
-			</div>
-
-			<Image
-				src="/img/Stripes.svg"
-				alt=""
-				width={1000}
-				height={1000}
-				className="w-full"
-			/>
-		</div>
-	);
+  return (
+    <div className="fixed bottom-0 flex h-16 w-screen flex-col items-center justify-center gap-4 bg-white p-4 dark:bg-black">
+      <h1 className="font-bold">Em breve novos projetos...</h1>
+      <div className="flex items-center justify-center space-x-2 bg-white dark:invert">
+        <div className="h-5 w-5 animate-pulse rounded-full bg-gray-400 [animation-delay:-0.4s]"></div>
+        <div className="h-5 w-5 animate-pulse rounded-full bg-gray-400 [animation-delay:-0.20s]"></div>
+        <div className="h-5 w-5 animate-pulse rounded-full bg-gray-400"></div>
+      </div>
+    </div>
+  );
 };
 
 export default Temporary;

@@ -21,13 +21,12 @@ export default function RootLayout({
 			<head>
 				<link rel="icon" href="/img/RL.ico" sizes="any" />
 			</head>
-			<body className="h-screen flex bg-fundo bg-repeat bg-opacity-20 dark:bg-darkfundo">
+			<body className="h-screen w-screen flex bg-fundo bg-cover bg-norepeat bg-opacity-20 dark:bg-darkfundo">
 				<Providers>
 					<main>
 						<Navbar />
 						<Dropdowns />
 						{children}
-						<Footer />
 					</main>
 				</Providers>
 			</body>
