@@ -11,10 +11,10 @@ const juliusFont = Julius_Sans_One({
 
 const Header = () => {
   return (
-    <div className="my-16 flex h-full w-auto items-center justify-between lg:flex-wrap-reverse lg:justify-around lg:gap-8">
+    <div className="my-16 flex h-full w-auto items-center justify-between lg:flex-wrap-reverse lg:justify-around lg:gap-8 md:gap-0">
       <div className="m-0 flex h-3/5 w-1/2 flex-wrap gap-4 rounded-r-[100px] bg-white p-10 ps-20 dark:bg-neutral-900 lg:m-12 lg:mb-20 lg:w-full lg:rounded-none lg:p-8 md:justify-center md:gap-4">
-        <section className="gap-1 md:inline-flex">
-          <p className="text-5xl lg:text-3xl md:text-xl">
+        <section className="gap-1 md:inline-flex sm:block">
+          <p className="text-5xl lg:text-3xl md:text-xl sm:inline">
             Bem-vindo, <a className="inline-flex text-xl lg:text-lg">ao meu</a>
           </p>
 
@@ -30,7 +30,7 @@ const Header = () => {
             conhecimentos na área de desenvolvimento.{" "}
           </p>
           <h1
-            className={`${juliusFont.className} text-balance justify-self-end text-2xl lg:text-lg md:justify-self-center`}
+            className={`${juliusFont.className} justify-self-end text-2xl lg:text-lg md:mx-10 md:justify-self-center`}
           >
             DESENVOLVEDORA FULL-STACK
           </h1>

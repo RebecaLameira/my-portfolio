@@ -14,7 +14,7 @@ const links = [
 const NavLinks = () => {
   const pathname = usePathname();
   return (
-    <div className="sm:text-base sm:gap-4 md:shrink flex gap-8">
+    <div className="flex gap-8 lg:shrink md:gap-4 sm:m-1 sm:text-base">
       {links.map((link) => {
         return (
           <Link

@@ -20,7 +20,7 @@ const Navbar = () => {
   let href = condicao ? "/contact" : "/";
 
   return (
-    <nav className="flex h-16 w-screen items-center justify-between bg-white px-16 shadow-lg dark:bg-black lg:justify-center">
+    <nav className="flex h-16 w-full items-center justify-between bg-white px-8 shadow-lg dark:bg-black lg:justify-center">
       <div className="flex flex-wrap justify-between gap-8">
         <NavLinks />
       </div>
