@@ -1,15 +1,15 @@
 export type TitleProps = {
-	children: React.ReactNode;
+  children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Title = ({ children, className }: TitleProps) => {
-	return (
-		<h1
-			className={`text-4xl text-secondary font-semibold laptop:text-2xl mobile:text-xl ${className}`}
-		>
-			{children}
-		</h1>
-	);
+  return (
+    <h1
+      className={`sm:text-xl md:text-2xl text-4xl font-semibold text-secondary ${className}`}
+    >
+      {children}
+    </h1>
+  );
 };
 
 export default Title;

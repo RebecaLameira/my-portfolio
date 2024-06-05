@@ -4,9 +4,9 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { type ThemeProviderProps } from "next-themes/dist/types";
 
 export function Providers({ children, ...props }: ThemeProviderProps) {
-	return (
-		<NextThemesProvider attribute="class" defaultTheme="light" {...props}>
-			{children}
-		</NextThemesProvider>
-	);
+  return (
+    <NextThemesProvider attribute="class" defaultTheme="dark" {...props}>
+      {children}
+    </NextThemesProvider>
+  );
 }

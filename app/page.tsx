@@ -4,14 +4,14 @@ import Logos from "../components/Logos/Logos";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home - Portfolio Rebeca Lameira",
+  title: "Home - Portfolio Rebeca Lameira",
 };
 
 export default function Home() {
-	return (
-		<div>
-			<Header />
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  );
 }

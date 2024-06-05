@@ -24,10 +24,10 @@ export default function Projects() {
     <div>
       <FloatingButton />
 
-      <div className="my-6 box-content grid h-[150px] grid-cols-2 content-center items-center bg-gradient-to-r from-[#17BFA8] to-[#0C5F55] p-8 mobile:h-[100px] mobile:p-4 laptop:h-[150px]">
+      <div className="my-6 box-content flex h-[150px] flex-nowrap content-center items-center bg-gradient-to-r from-[#17BFA8] to-[#0C5F55] p-8 lg:place-content-center md:h-[150px] sm:h-[100px] sm:p-4">
         <div>
           <h1
-            className={`${juliusFont.className} indent-8 text-5xl tracking-[50px] text-white mobile:text-lg mobile:tracking-[25px] laptop:text-2xl laptop:tracking-[30px]`}
+            className={`${juliusFont.className} indent-8 text-5xl tracking-[50px] text-white lg:justify-center lg:tracking-[30px] md:text-2xl sm:text-lg sm:tracking-[25px]`}
           >
             PROJETOS
           </h1>
@@ -38,11 +38,11 @@ export default function Projects() {
             alt=""
             width={600}
             height={400}
-            className="mobile:hidden"
+            className="lg:hidden"
           />
         </div>
       </div>
-      <div className="my-20 flex w-full flex-wrap justify-center gap-10">
+      <div className="my-auto flex w-auto flex-wrap justify-center gap-10">
         <Card
           title="Design Portfolio Figma"
           description="Este projeto é o meu portfólio, criado para demonstrar meu trabalho como desenvolvedora de software. "
@@ -50,6 +50,7 @@ export default function Projects() {
           src="img/Foto Portfolio.jpg"
         />
       </div>
+      <div className="h-4"></div>
       <Temporary />
     </div>
   );

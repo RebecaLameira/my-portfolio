@@ -7,45 +7,37 @@ import { usePathname } from "next/navigation";
 import { Indie_Flower } from "next/font/google";
 
 const indieFont = Indie_Flower({
-	weight: ["400"],
-	subsets: ["latin"],
-	variable: "--font-indie",
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-indie",
 });
 
 const Navbar = () => {
-	const pathname = usePathname();
-	const condicao = pathname != "/contact";
+  const pathname = usePathname();
+  const condicao = pathname != "/contact";
 
-	let valueButton = condicao ? "Contato" : "Voltar";
-	let href = condicao ? "/contact" : "/";
+  let valueButton = condicao ? "Contato" : "Voltar";
+  let href = condicao ? "/contact" : "/";
 
-	return (
-		<nav className="flex w-screen h-20 bg-white shadow-lg items-center justify-between px-16 mobile:justify-center mobile:px-8 dark:bg-black">
-			<div className="flex flex-wrap gap-8 justify-between">
-				<span
-					className={`${indieFont.className} text-2xl laptop:text-base mobile:hidden`}
-				>
-					Rebeca Lameira
-				</span>
-				<NavLinks />
-			</div>
+  return (
+    <nav className="flex h-16 w-screen items-center justify-between bg-white px-16 shadow-lg dark:bg-black lg:justify-center">
+      <div className="flex flex-wrap justify-between gap-8">
+        <NavLinks />
+      </div>
 
-			<div className="flex laptop:hidden mobile:hidden  gap-4 items-center">
-				<div>
-					<Button>
-						{
-							<Link
-								href={href}
-								className="text-base font-bold item-end px-8 py-3.5 "
-							>
-								{valueButton}
-							</Link>
-						}
-					</Button>
-				</div>
-			</div>
-		</nav>
-	);
+      <div className="flex items-center gap-4 lg:hidden">
+        <div>
+          <Button>
+            {
+              <Link href={href} className="item-end px-8 text-base font-bold">
+                {valueButton}
+              </Link>
+            }
+          </Button>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
