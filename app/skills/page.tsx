@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function Skills() {
   return (
-    <div>
+    <div className="flex w-screen">
       <FloatingButton />
-      <div className="m-14 bg-white p-8 indent-4 dark:bg-black sm:m-8">
+      <div className="m-14 w-full bg-white p-8 indent-4 dark:bg-black sm:m-8">
         <section className="grid gap-4">
           <Title>Habilidades e Tecnologias</Title>
           <Skill label="HTML" level="Advanced" percent={"w-5/6"}></Skill>

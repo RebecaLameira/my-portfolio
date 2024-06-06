@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <div>
+    <div className="w-screen">
       <FloatingButton />
 
       <div className="my-6 box-content flex h-[150px] flex-nowrap content-center items-center bg-gradient-to-r from-[#17BFA8] to-[#0C5F55] p-8 lg:place-content-center md:h-[150px] sm:h-[100px] sm:p-4">
