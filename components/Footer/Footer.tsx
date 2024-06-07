@@ -8,7 +8,7 @@ const indieFont = Indie_Flower({
 
 const Footer = () => {
   return (
-    <div className="box relative bottom-0 flex w-full items-center justify-between bg-white px-14 py-2 shadow-inner dark:border-none dark:bg-black dark:shadow-2xl lg:justify-center">
+    <div className="box fixed bottom-0 flex w-full items-center justify-between bg-white px-14 py-2 shadow-inner dark:border-none dark:bg-black dark:shadow-2xl lg:relative lg:justify-center">
       <span className={`${indieFont.className} text-2xl lg:hidden`}>
         Rebeca Lameira
       </span>
