@@ -5,7 +5,7 @@ export type TitleProps = {
 const Title = ({ children, className }: TitleProps) => {
   return (
     <h1
-      className={`sm:text-xl md:text-2xl text-4xl font-semibold text-secondary ${className}`}
+      className={`text-2xl font-semibold text-secondary md:text-xl sm:text-lg ${className}`}
     >
       {children}
     </h1>

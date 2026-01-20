@@ -1,27 +1,22 @@
 import Title from "../Title/Title";
+
 const Content = () => {
   return (
-    <article className="sm:text-sm sm:m-8 m-16 grid gap-6 bg-white p-8 text-justify indent-8 text-xl dark:bg-black">
+    <article className="m-0 rounded-3xl bg-white p-8 text-lg shadow-sm dark:bg-neutral-900 lg:mx-4 lg:p-6 lg:text-base md:mx-4 md:p-6 sm:text-sm">
       <Title>Sobre Mim</Title>
-      <p>
-        Sou desenvolvedora Front-end especializada em criar interfaces elegantes
-        e altamente funcionais. Com três anos de experiência em desenvolvimento
-        e um diploma recente em Engenharia da Computação, estou constantemente
-        aprimorando minhas habilidades de programação. Estou sempre em busca de
-        novos desafios e oportunidades de colaboração para ampliar meus
-        conhecimentos e contribuir com projetos inovadores.
-      </p>
-      <p>
-        Minha experiência inclui HTML5, CSS3, JavaScript e TypeScript,
-        essenciais para entregar designs sofisticados e experiências de usuário
-        intuitivas. Tenho experiência em diversos frameworks CSS, como Tailwind
-        CSS, Bootstrap e Material UI, além de dominar bibliotecas como React.js
-        e o framework Next.js. No back-end, tenho conhecimento de Python,
-        Node.js e ASP.NET, além de SQL, MySQL, MongoDB e Firebase Realtime
-        Database. Estou sempre em busca de novos desafios e oportunidades de
-        colaboração para ampliar meus conhecimentos e contribuir com projetos
-        inovadores.
-      </p>
+
+      <div className="mt-5 grid gap-3 text-neutral-700 dark:text-neutral-300">
+        <p>
+          Minha atuação envolve o desenvolvimento de aplicações web utilizando
+          tecnologias como React, Next.js e TypeScript, com foco em código
+          organizado, componentização e integração com APIs. Além do
+          desenvolvimento web, atuo com tratamento, análise e visualização de
+          dados utilizando Python e bibliotecas como Pandas, NumPy e
+          Scikit-learn, com interesse em soluções orientadas a dados.
+          Atualmente, concilio atividades acadêmicas e profissionais, buscando
+          unir desenvolvimento de software e Ciência de Dados de forma aplicada.
+        </p>
+      </div>
     </article>
   );
 };
