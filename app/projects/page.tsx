@@ -24,7 +24,7 @@ export default function Projects() {
     <div className="w-screen">
       <FloatingButton />
 
-      <div className="my-6 box-content flex h-[150px] flex-nowrap content-center items-center bg-gradient-to-r from-[#17BFA8] to-[#0C5F55] p-8 lg:place-content-center md:h-[150px] sm:h-[100px] sm:p-4">
+      <div className="my-6 box-content flex h-[150px] flex-nowrap content-center items-center justify-between bg-gradient-to-r from-[#17BFA8] to-[#0C5F55] p-8 lg:place-content-center md:h-[150px] sm:h-[100px] sm:p-4">
         <div>
           <h1
             className={`${juliusFont.className} indent-8 text-5xl tracking-[50px] text-white lg:justify-center lg:tracking-[30px] md:text-2xl sm:text-lg sm:tracking-[25px]`}
@@ -42,15 +42,22 @@ export default function Projects() {
           />
         </div>
       </div>
-      <div className="my-auto flex w-auto flex-wrap justify-center gap-10">
+      <div className="my-auto flex w-auto flex-wrap items-stretch justify-center gap-10">
         <Card
           title="Design Portfolio Figma"
-          description="Este projeto é o meu portfólio, criado para demonstrar meu trabalho como desenvolvedora de software. "
+          description="Este projeto é o meu portfólio, criado para demonstrar meu trabalho como desenvolvedora de software."
           url="https://www.figma.com/design/5VNDXg18Ta9ejC6IN3CdQS/Portfolio-(Community)?node-id=0-1&t=wFJKyHCPHty3Pjkc-0"
           src="img/Foto Portfolio.jpg"
         />
+        <Card
+          title="Análise de Dados Ambientais"
+          description="Aplicação web para leitura, tratamento e visualização de dados ambientais do Pantanal, com diagnóstico de dados ausentes, interpolação linear."
+          url="https://pantanalanalytics.streamlit.app/"
+          src="img/Dashboard.jpg"
+        />
       </div>
       <div className="h-4"></div>
+    
       <Temporary />
     </div>
   );

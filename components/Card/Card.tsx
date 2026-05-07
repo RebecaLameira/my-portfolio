@@ -8,15 +8,15 @@ const Card = ({ title, description, url, src }: CardProps) => {
   return (
     <>
       <div className="flex items-center justify-center">
-        <div className="relative flex w-[40rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md hover:bg-slate-100 dark:bg-black dark:hover:bg-neutral-800 lg:mb-20 lg:w-1/3 lg:flex-wrap sm:w-1/2">
-          <div className="relative m-0 w-3/5 bg-white bg-clip-border text-gray-700 dark:bg-black lg:h-1/2 lg:w-full">
+        <div className="relative flex h-full w-[40rem] flex-row overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md hover:bg-slate-100 dark:bg-black dark:hover:bg-neutral-800 lg:mb-20 lg:w-1/3 lg:flex-wrap sm:w-1/2">
+          <div className="relative m-0 w-2/5 shrink-0 bg-white bg-clip-border text-gray-700 dark:bg-black lg:h-48 lg:w-full">
             <img
               src={src}
               alt="image"
-              className="h-full w-full rounded-xl rounded-r-none object-cover lg:h-auto lg:w-auto lg:rounded-b-none lg:rounded-t-xl"
+              className="h-full w-full object-cover lg:h-48 lg:rounded-b-none lg:rounded-t-xl"
             />
           </div>
-          <div className="p-6">
+          <div className="flex flex-col justify-between p-6">
             <h4 className="text-blue-gray-900 lg: mb-2 block text-2xl font-semibold leading-snug tracking-normal antialiased dark:text-white lg:text-xl">
               {title}
             </h4>
