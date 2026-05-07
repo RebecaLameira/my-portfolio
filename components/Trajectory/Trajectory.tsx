@@ -11,6 +11,24 @@ const Trajectory = () => {
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
           <h3 className="text-lg font-semibold text-secondary dark:text-white">
+            Analista de Sistemas Plena | NUTI – UFMT
+          </h3>
+
+          <p className="mt-2 text-base text-neutral-700 dark:text-neutral-300">
+                Desenvolvimento do sistema ATENA para a Politec-MT, com stack full stack:
+                front-end em React.js e JavaScript e back-end em Java com Spring Boot.
+                Integração com APIs REST, containerização com Docker e atuação em pipeline
+                de CI/CD com GitLab.
+          </p>
+
+          <time className="mt-2 block text-sm text-green-700 dark:text-green-400">
+            2026 – Atual
+          </time>
+        </li>
+        <li className="mb-10">
+          <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
+
+          <h3 className="text-lg font-semibold text-secondary dark:text-white">
             Estagiária de Ciência de Dados | Polícia Militar de Mato Grosso
           </h3>
 
@@ -23,7 +41,7 @@ const Trajectory = () => {
           </p>
 
           <time className="mt-2 block text-sm text-green-700 dark:text-green-400">
-            2025 – Atual
+            2025 – 2026
           </time>
         </li>
 
