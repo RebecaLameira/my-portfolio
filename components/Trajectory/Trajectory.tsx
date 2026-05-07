@@ -6,7 +6,6 @@ const Trajectory = () => {
       <Title>Trajetória</Title>
 
       <ol className="relative mt-8 border-s-2 border-dashed border-green-700 ps-6">
-        {/* Ciência de Dados */}
         <li className="mb-10">
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
@@ -25,6 +24,7 @@ const Trajectory = () => {
             2026 – Atual
           </time>
         </li>
+
         <li className="mb-10">
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
@@ -45,7 +45,6 @@ const Trajectory = () => {
           </time>
         </li>
 
-        {/* Estágio de Docência */}
         <li className="mb-10">
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
@@ -65,7 +64,7 @@ const Trajectory = () => {
           </time>
         </li>
 
-        {/* Freelancer */}
+  
         <li className="mb-10">
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
@@ -84,7 +83,6 @@ const Trajectory = () => {
           </time>
         </li>
 
-        {/* Eu Quero Grana */}
         <li className="mb-10">
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
@@ -103,7 +101,6 @@ const Trajectory = () => {
           </time>
         </li>
 
-        {/* NUTI */}
         <li className="mb-10">
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
@@ -122,7 +119,6 @@ const Trajectory = () => {
           </time>
         </li>
 
-        {/* Suporte */}
         <li>
           <span className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-700 dark:bg-green-900" />
 
